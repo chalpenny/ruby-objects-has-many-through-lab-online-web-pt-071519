@@ -20,12 +20,11 @@
 
     def new_song(name, genre)
       name = Song.new(name, self, genre)
-    #  name.artist = self
     end
 
     def genres
-      genre_list = []
-      Song.all.each do |x| genre_list << x.genre
+    songs.map do |x|
+      songs.genre
       end
     end
 
